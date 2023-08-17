@@ -33,7 +33,7 @@ spec:
       - env:
         - name: SECRET_KEY_BASE
           value: 66347d769731732b443568c9b4528f6078c1a06a0e92106e686c35d6301fdb6f2be5bdb71a8d9dcf9dae7f1b150ebbd0b73730ae8ccbf003dcb703794d8bec2e
-        image: tputbrese.azurecr.io/tap1.6-apps/rails-asset-demo-02-dev-sandbox@sha256:0dc387b0ec510aa16bd8eb5c6f46be145d5314bbe3164fee8240d572083da110
+        image: tputbrese.azurecr.io/tap1.6-apps/rails-asset-demo-02-dev-sandbox@sha256:2127ab960bccfb67ea170e4b7544957745c78c74fd484a4ce9a1ab3a0b51cecc
         name: workload
         resources: {}
         securityContext:
