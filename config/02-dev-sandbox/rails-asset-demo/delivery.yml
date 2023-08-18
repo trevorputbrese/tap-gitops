@@ -24,13 +24,17 @@ spec:
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: rails-asset-demo
+        apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: rails-asset-demo
     spec:
       containers:
       - env:
         - name: SECRET_KEY_BASE
-          value: 66347d769731732b443568c9b4528f6078c1a06a0e92106e686c35d6301fdb6f2be5bdb71a8d9dcf9dae7f1b150ebbd0b73730ae8ccbf003dcb703794d8bec2e
+          valueFrom:
+            secretKeyRef:
+              key: SECRET_KEY_BASE
+              name: rails-asset-demo-secret-key
         image: tputbrese.azurecr.io/tap1.6-apps/rails-asset-demo-02-dev-sandbox@sha256:ab0f8f984bbb0416d882228f56b6e9de726ec0295aa154c3751ed0700ea83b76
         name: workload
         resources: {}
