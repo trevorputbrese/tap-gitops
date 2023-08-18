@@ -16,7 +16,6 @@ spec:
   template:
     metadata:
       annotations:
-        autoscaling.knative.dev/minScale: "1"
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
           spring-boot-convention/auto-configure-actuators-check
@@ -25,7 +24,6 @@ spec:
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: rails-asset-demo
-        apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: rails-asset-demo
     spec:
@@ -33,7 +31,7 @@ spec:
       - env:
         - name: SECRET_KEY_BASE
           value: 66347d769731732b443568c9b4528f6078c1a06a0e92106e686c35d6301fdb6f2be5bdb71a8d9dcf9dae7f1b150ebbd0b73730ae8ccbf003dcb703794d8bec2e
-        image: tputbrese.azurecr.io/tap1.6-apps/rails-asset-demo-02-dev-sandbox@sha256:2127ab960bccfb67ea170e4b7544957745c78c74fd484a4ce9a1ab3a0b51cecc
+        image: tputbrese.azurecr.io/tap1.6-apps/rails-asset-demo-02-dev-sandbox@sha256:ab0f8f984bbb0416d882228f56b6e9de726ec0295aa154c3751ed0700ea83b76
         name: workload
         resources: {}
         securityContext:
