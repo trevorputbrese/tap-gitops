@@ -35,7 +35,7 @@ spec:
             secretKeyRef:
               key: SECRET_KEY_BASE
               name: rails-secret-key-trev-cluster
-        image: tputbrese.azurecr.io/tap1.6-apps/rails-assets-demo-prod-01-dev-sandbox@sha256:f78f2d65e49f15e914b90e3b07799880dba22677b380efdd24fab595f2488f22
+        image: tputbrese.azurecr.io/tap1.6-apps/rails-assets-demo-prod-01-dev-sandbox@sha256:70a62c8c6690dab95ee5af3969cf91fe6eafc0f32ec718e28c47a2a19620bcf0
         name: workload
         resources: {}
         securityContext:
