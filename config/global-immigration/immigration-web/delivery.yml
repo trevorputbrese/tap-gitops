@@ -30,7 +30,7 @@ spec:
         carto.run/workload-name: immigration-web
     spec:
       containers:
-      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global-immigration@sha256:08403c4af85a6c8288673de5307e664fb4f1b3c51fe789946f1e3ee5e49c4169
+      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global-immigration@sha256:f7223f9432f4a0cc33636a7530f43fecf64e0467874c1cd3dcdce3f64b229632
         name: workload
         resources: {}
         securityContext:
