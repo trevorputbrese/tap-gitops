@@ -25,7 +25,7 @@ spec:
           spring-boot-convention/app-live-view-appflavour-check
         developer.apps.tanzu.vmware.com/image-source-digest: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:f6764e6cac22dc83d73541cc870ffd5c69052d595f9c158891520cae333f8283
         developer.conventions/target-containers: workload
-        local-source-proxy.apps.tanzu.vmware.com: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:f6764e6cac22dc83d73541cc870ffd5c69052d595f9c158891520cae333f8283
+        local-source-proxy.apps.tanzu.vmware.com: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:be4da6075bb91ea40a07755d1081bb6a0d20988360c0cdaa37fc39dc33d72e7e
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: immigration
