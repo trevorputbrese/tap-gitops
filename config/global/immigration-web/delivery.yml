@@ -24,7 +24,7 @@ spec:
           developer-conventions/add-source-image-label
           spring-boot-convention/auto-configure-actuators-check
           spring-boot-convention/app-live-view-appflavour-check
-        developer.apps.tanzu.vmware.com/image-source-digest: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:f160030ef25a76a4234607c1539effb121ade55b1e1213cfa701fd4e50ab91cc
+        developer.apps.tanzu.vmware.com/image-source-digest: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:da138a6fb35b84ec13963e5d592d0f7ffd4a404c6c4364ecdfc4ca65b0f60e09
         developer.conventions/target-containers: workload
         local-source-proxy.apps.tanzu.vmware.com: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:da138a6fb35b84ec13963e5d592d0f7ffd4a404c6c4364ecdfc4ca65b0f60e09
       labels:
@@ -35,7 +35,7 @@ spec:
         carto.run/workload-name: immigration-web
     spec:
       containers:
-      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global@sha256:bc0383d9f1b645a90e86e255875d3996aab753d0dc42ef365957212038a887bc
+      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global@sha256:ab3aba7ccda89a4eca0a642322ed2bbdb02420e3c0900fad2c9c6a153e2fb00c
         name: workload
         resources: {}
         securityContext:
