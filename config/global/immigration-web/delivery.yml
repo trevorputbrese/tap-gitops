@@ -16,12 +16,16 @@ spec:
   template:
     metadata:
       annotations:
+        apps.tanzu.vmware.com/live-update: "true"
         autoscaling.knative.dev/minScale: "1"
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
+          developer-conventions/add-source-image-label
           spring-boot-convention/auto-configure-actuators-check
           spring-boot-convention/app-live-view-appflavour-check
+        developer.apps.tanzu.vmware.com/image-source-digest: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:0db80d54f4027eaa12a34e226022c0615d3e44124ec1557b052f33207bd4d287
         developer.conventions/target-containers: workload
+        local-source-proxy.apps.tanzu.vmware.com: tputbrese.azurecr.io/tap1.6.2:global-immigration-web@sha256:0db80d54f4027eaa12a34e226022c0615d3e44124ec1557b052f33207bd4d287
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: immigration
@@ -30,7 +34,7 @@ spec:
         carto.run/workload-name: immigration-web
     spec:
       containers:
-      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global@sha256:094ff6e5b9d70721ea004c7e1d1c9614fdda6cd19b95ff17beab8f1459a11250
+      - image: tputbrese.azurecr.io/tap1.6-apps/immigration-web-global@sha256:a15094cd6da9f343e3ec1a126c5ccb771083e8808ae268d82c08f25423fdd9ec
         name: workload
         resources: {}
         securityContext:
