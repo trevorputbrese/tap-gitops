@@ -35,7 +35,7 @@ spec:
             secretKeyRef:
               key: SECRET_KEY_BASE
               name: rails-secret-key-trev-cluster
-        image: tputbrese.azurecr.io/tap1.6-apps/immigration-messages-global@sha256:f1397f5e8affa4bf09d8f4725c2cd51eb151f9362813ab410f5e8fa9beb30c7d
+        image: tputbrese.azurecr.io/tap1.6-apps/immigration-messages-global@sha256:f31e36a79f3743c111e97e85e852a20fa6afe34cef4c2237efa56a4463d4aac9
         name: workload
         resources: {}
         securityContext:
