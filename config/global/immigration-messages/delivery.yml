@@ -16,6 +16,7 @@ spec:
   template:
     metadata:
       annotations:
+        autoscaling.knative.dev/minScale: "1"
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
           spring-boot-convention/auto-configure-actuators-check
@@ -35,7 +36,7 @@ spec:
             secretKeyRef:
               key: SECRET_KEY_BASE
               name: rails-secret-key-trev-cluster
-        image: tputbrese.azurecr.io/tap1.6-apps/immigration-messages-global@sha256:539f46a7343f92b6f3fff54722dd3bc7ca2960dae6a97c60fd8f93c89d6a9e11
+        image: tputbrese.azurecr.io/tap1.6-apps/immigration-messages-global@sha256:83cdd2d5beabbbd44926bb9b3c0161dfba4c198345124e626503b4d6bf4f7445
         name: workload
         resources: {}
         securityContext:

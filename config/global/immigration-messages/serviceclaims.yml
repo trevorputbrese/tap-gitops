@@ -18,6 +18,7 @@ kind: ServiceBinding
 metadata:
   name: immigration-messages-postgresql-rails-7-demo
   annotations:
+    autoscaling.knative.dev/minScale: "1"
     kapp.k14s.io/change-group: servicebinding.io/ServiceBindings
   labels:
     app.kubernetes.io/part-of: immigration-messages
@@ -41,6 +42,7 @@ kind: ServiceBinding
 metadata:
   name: immigration-messages-redis-rails-7-demo
   annotations:
+    autoscaling.knative.dev/minScale: "1"
     kapp.k14s.io/change-group: servicebinding.io/ServiceBindings
   labels:
     app.kubernetes.io/part-of: immigration-messages
